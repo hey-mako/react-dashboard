@@ -12,7 +12,7 @@ import dashboardRoutes from "routes/dashboard.jsx";
 
 import appStyle from "assets/jss/material-dashboard-react/appStyle.jsx";
 
-import image from "assets/img/sidebar-2.jpg";
+import image from "assets/img/sidebar-3.jpg";
 import logo from "assets/img/reactlogo.png";
 
 const switchRoutes = (
@@ -50,12 +50,11 @@ class App extends React.Component {
       <div className={classes.wrapper}>
         <Sidebar
           routes={dashboardRoutes}
-          logoText={"Creative Tim"}
-          logo={logo}
-          image={image}
+          logoText={"BotOps"}
+		  logo={logo}
           handleDrawerToggle={this.handleDrawerToggle}
           open={this.state.mobileOpen}
-          color="blue"
+          color="orange"
           {...rest}
         />
         <div className={classes.mainPanel} ref="mainPanel">

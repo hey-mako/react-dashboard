@@ -1,5 +1,5 @@
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
-import UserProfile from "views/UserProfile/UserProfile.jsx";
+import SettingsPage from "views/Settings/Settings.jsx";
 import TableList from "views/TableList/TableList.jsx";
 import Typography from "views/Typography/Typography.jsx";
 import Icons from "views/Icons/Icons.jsx";
@@ -20,16 +20,16 @@ const dashboardRoutes = [
   {
     path: "/dashboard",
     sidebarName: "Dashboard",
-    navbarName: "Material Dashboard",
+    navbarName: "BotOps Dashboard",
     icon: Dashboard,
     component: DashboardPage
   },
   {
-    path: "/user",
-    sidebarName: "User Profile",
-    navbarName: "Profile",
+    path: "/settings",
+    sidebarName: "Settings",
+    navbarName: "Account Setting",
     icon: Person,
-    component: UserProfile
+    component: SettingsPage
   },
   {
     path: "/table",

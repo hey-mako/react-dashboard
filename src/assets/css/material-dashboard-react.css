@@ -219,3 +219,25 @@ footer ul li a:hover {
         overflow-x: hidden;
     }
 }
+
+/** Custom **/
+.dashboard__status-icon {
+	display: flex;
+    align-items: center;
+}
+
+.dashboard__status-icon p {
+	width: 75px;
+}
+
+.dashboard__status-icon--active {
+	color: #4a9c16;
+}
+
+.dashboard__status-icon--error {
+	color: #ed4630;	
+}
+
+.dashboard__status-icon--inactive {
+	color: #7f8286;
+}
