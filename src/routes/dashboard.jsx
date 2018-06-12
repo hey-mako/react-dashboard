@@ -1,4 +1,4 @@
-import DashboardPage from "views/Dashboard/Dashboard.jsx";
+import DashboardPage from "container/Dashboard";
 import SettingsPage from "views/Settings/Settings.jsx";
 
 import {

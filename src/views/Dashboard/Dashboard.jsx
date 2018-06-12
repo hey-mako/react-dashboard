@@ -48,7 +48,7 @@ class Dashboard extends React.Component {
 		<Status indicator="inactive" />
 	);
 
-    return (
+	return (
       <div>
         <Grid container>
           <ItemGrid xs={12} sm={6} md={6}>
@@ -56,10 +56,10 @@ class Dashboard extends React.Component {
               icon={Build}
               iconColor="orange"
               title="Usage"
-              description="10/500"
+              description={`${this.props.buildCount}/${this.props.buildMax}`}
               small="builds"
               statIcon={Update}
-              statText="24 Hours Ago"
+              statText={this.props.lastBuild}
             />
           </ItemGrid>
           <ItemGrid xs={12} sm={6} md={6}>
@@ -67,7 +67,7 @@ class Dashboard extends React.Component {
               icon={GroupWork}
               iconColor="green"
               title="Apps"
-              description="1/1"
+              description={`${this.props.appCount}/${this.props.appMax}`}
 			  statIcon={Warning}
 			  statIconColor="warning"
               statLink={{ text: "Upgrade plan...", href: "#plan " }}
@@ -78,7 +78,8 @@ class Dashboard extends React.Component {
           <ItemGrid xs={12} sm={12} md={12}>
             <RegularCard
               headerColor="orange"
-              cardTitle="Review Test Applications"
+			  cardTitle="Review Test Applications"
+			  cardSubtitle=""
               content={
                 <Table
                   tableHeaderColor="warning"
@@ -99,7 +100,9 @@ class Dashboard extends React.Component {
 }
 
 Dashboard.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
+  buildCount: PropTypes.number.isRequired,
+  
 };
 
 export default withStyles(dashboardStyle)(Dashboard);
