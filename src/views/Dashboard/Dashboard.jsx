@@ -82,7 +82,6 @@ class Dashboard extends React.Component {
 			  cardSubtitle=""
               content={
                 <Table
-                  tableHeaderColor="warning"
                   tableHead={["App Id", "Build Name", "Pull Request", "Status", "Test User", ""]}
                   tableData={[
 					["2186735398249221", "immune-doe-review-pr-32", <a href="https://github.com/hey-mako/mako/pull/32" target="_blank">#36</a>, StatusTest, "John Smith", <Button color="primary">Login</Button>],

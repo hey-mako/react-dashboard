@@ -12,8 +12,7 @@ import dashboardRoutes from "routes/dashboard.jsx";
 
 import appStyle from "assets/jss/material-dashboard-react/appStyle.jsx";
 
-import image from "assets/img/sidebar-3.jpg";
-import logo from "assets/img/reactlogo.png";
+import logo from "assets/img/bot_logo.png";
 
 const switchRoutes = (
   <Switch>
