@@ -17,14 +17,14 @@ function UserProfile({ ...props }) {
       <Grid container>
         <ItemGrid xs={12} sm={12} md={12}>
           <RegularCard
-            cardTitle="Plan Settings"
+			cardTitle="Plan Settings"
+			headerColor="orange"
             cardSubtitle="Available Heroku plans"
             content={
               <div>
                 <Grid container>
                   <ItemGrid xs={12} sm={12} md={12}>
 				  	<Table
-						tableHeaderColor="black"
 						tableHead={["Plan", "Build Limits", "App Limits", "Cost"]}
 						tableData={[
 							["Hobby", "20 Builds/month", "1 App", "$0/month"],
