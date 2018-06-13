@@ -18,7 +18,7 @@ function apps (state = [], action) {
 		default:
 			return state;
 	}
-}
+};
 
 function currentUser (
 	state = {

@@ -27,7 +27,7 @@
     "test": "react-scripts test --env=jsdom",
 	"eject": "react-scripts eject",
 	"docker-build": "docker build . -t botops-front-end",
-	"docker-start": "docker run botops-front-end",
+	"docker-start": "docker run -p 8000:3000 botops-front-end",
 	"docker-dev": "npm run docker-build && npm run docker-start"
   },
   "repository": {

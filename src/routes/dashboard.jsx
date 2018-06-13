@@ -4,11 +4,6 @@ import SettingsPage from "views/Settings/Settings.jsx";
 import {
   Dashboard,
   Person,
-  ContentPaste,
-  LibraryBooks,
-  BubbleChart,
-  LocationOn,
-  Notifications
 } from "@material-ui/icons";
 
 const dashboardRoutes = [
