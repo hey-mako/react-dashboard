@@ -2,12 +2,12 @@ import { connect } from 'react-redux';
 import Dashboard from '../views/Dashboard/Dashboard';
 const mapStateToProps = state => {
 	return {
-	  buildCount: state.user.buildCount,
+	  buildCount: state.currentUser.buildCount,
 	  apps: state.apps,
-	  appCount: state.user.appCount,
-	  buildMax: state.user.buildMax,
-	  lastBuild: state.user.lastBuild,
-	  appMax: state.user.appMax,
+	  appCount: state.currentUser.appCount,
+	  buildMax: state.currentUser.buildMax,
+	  lastBuild: state.currentUser.lastBuild,
+	  appMax: state.currentUser.appMax,
 	}
 };
 
